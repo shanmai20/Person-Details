@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" type="text/css" href="assignment.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="assignment.js"></script>
+    <div id="container">
+      <h1>PERSON DETAILS</h1>
+      <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" />
+        <br />
+        <button type="button" onclick="addPerson()">Add</button>
+      </form>
+      <div id="search-container">
+        <input
+          type="text"
+          id="search-bar"
+          onkeyup="search()"
+          placeholder="Search..."
+        />
+      </div>
+      <div id="person-list">
+        <!-- List of people will be displayed here -->
+      </div>
+    </div>
+  </body>
+</html>
